@@ -1,12 +1,19 @@
 //import
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat|Open+Sans');
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../fonts/DroidSans-Bold.ttf');
+}
+@font-primary: 'Montserrat', sans-serif;
+@font-title: 'DroidSans', sans-serif;
+@font-fancy: 'Great Vibes', serif;
 * {
     box-sizing: border-box;
 }
 body {
     padding: 0;
     margin: 0;
-    font: 14px 'Montserrat', sans-serif;
+    font: 14px @font-primary;
 }
 
 .wrapper {
@@ -47,8 +54,10 @@ img {
 }
 
 @color-primary: #df001f;
+@color-primary-hover: rgba(223, 0, 31, 0.8);
 @color-white: #fff;
 @color-gray: #d6d6d6;
+@color-black: #333;
 
 .btn {
     border: 0;
@@ -63,8 +72,15 @@ img {
     transition: 0.2s all;
     border: 2px solid transparent;
     &:hover {
-
         background: @color-gray;
+    }
+    &--red {
+        background: @color-primary;
+        color: @color-white;
+        &:hover {
+            background: @color-primary-hover;
+            color: @color-gray;
+        }
     }
 }
 .navbar {
@@ -74,6 +90,7 @@ img {
     background-color: @color-primary;
     &__menu {
         display: flex;
+        z-index: 10;
     }
     &__logo {
         position: absolute;
@@ -116,6 +133,7 @@ img {
         font-size: 13px;
         position: relative;
         transition: 0.2s all;
+        user-select: none;
         &::before {
             content: '';
             width: 80%;
@@ -145,6 +163,55 @@ img {
     }
 }
 
+.title {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: @font-title;
+    line-height: 0.6;
+    margin-top: 0;
+    margin-bottom: 85px;
+    transform: scale(.8, 1);
+    user-select: none;
+    padding: 5px 10px;
+    &--big {
+        color: @color-primary;
+        font-size: 130px;
+    }
+    &__small {
+        display: inline-block;
+        width: 100%;
+        font-weight: 200;
+        font-size: 90px;
+        font-family: 'Great Vibes';
+        text-transform: capitalize;
+        transform: scale(1.1, 1);
+        &--big {
+            color: @color-black;
+        }
+    }
+}
+.slider {
+    position: relative;
+    &__description {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -45%);
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: @color-gray;
+        position: absolute;
+        bottom: -3px;
+    }
+
+}
 .icon {
     font-weight: 200;
     font-size: 20px;
