@@ -11,5 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "nu-html-checker": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/d3": "^5.7.1",
+    "@types/jquery": "^3.3.29",
+    "@types/lodash": "^4.14.121"
   }
 }
