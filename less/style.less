@@ -80,7 +80,7 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: 0.2s all;
+        transition: 0.2s transform;
         &:hover {
             transform: translate(-50%, -50%) scale(1.1);
         }
@@ -102,6 +102,9 @@ img {
         &--button-in {
             margin-left: 38px;
         }
+    }
+    &__hamburger-box {
+        display: none;
     }
     &__link {
         display: inline-block;
