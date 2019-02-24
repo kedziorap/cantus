@@ -234,12 +234,34 @@ img {
   position: absolute;
   bottom: -3px;
 }
+.slider__progress {
+  display: block;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  background: #df001f;
+  bottom: -3px;
+}
+.slider__item--hide {
+  display: none;
+}
+.slider__item {
+  animation: fade 0.5s;
+}
 .icon {
   font-weight: 200;
   font-size: 20px;
   transform: translateY(1px);
   display: inline-block;
   margin-right: 15px;
+}
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 1366px) {
   .navbar__logo {
@@ -378,6 +400,10 @@ img {
     content: "";
     bottom: 0;
     z-index: 1;
+  }
+  .slider__progress {
+    bottom: 0;
+    z-index: 2;
   }
   .title {
     margin-bottom: 15px;
