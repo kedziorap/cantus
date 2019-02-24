@@ -176,3 +176,35 @@ img {
   display: inline-block;
   margin-right: 15px;
 }
+@media (max-width: 1366px) {
+  .navbar__logo {
+    max-width: 100px;
+  }
+  .navbar__list {
+    margin-left: 10px;
+  }
+  .navbar__list--right {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .navbar__item {
+    padding: 10px 0;
+  }
+  .navbar__item--button-in {
+    margin-left: 15px;
+  }
+  .navbar__link {
+    padding: 10px 10px;
+  }
+  .btn {
+    padding: 16px 25px;
+  }
+  .icon {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    background: green;
+  }
+}
