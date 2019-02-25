@@ -445,6 +445,43 @@ img {
     font-family: @font-fancy;
     font-size: 40px;
 }
+.playlist {
+    padding: 5px;
+    &__box {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        width: 30%;
+    }
+    &__item {
+        list-style-type: none;
+        cursor: pointer;
+        padding-top: 3px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid @color-gray;
+        transition: 0.2s padding;
+        &:hover {
+            padding-left: 5px;
+        }
+    }
+ 
+}
+.insta {
+    padding: 0;
+    &__box {
+        padding: 10px;
+        padding-top: 0;
+        cursor: pointer;
+        transition: 0.2s filter;
+        &:hover {
+            filter: blur(1px);
+        }
+    }
+}
 //ANIMATE
 
 @keyframes fade {

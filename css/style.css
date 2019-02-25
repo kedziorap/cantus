@@ -464,6 +464,42 @@ img {
   font-family: 'Great Vibes', serif;
   font-size: 40px;
 }
+.playlist {
+  padding: 5px;
+}
+.playlist__box {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.playlist__list {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+.playlist__item {
+  list-style-type: none;
+  cursor: pointer;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d6d6d6;
+  transition: 0.2s padding;
+}
+.playlist__item:hover {
+  padding-left: 5px;
+}
+.insta {
+  padding: 0;
+}
+.insta__box {
+  padding: 10px;
+  padding-top: 0;
+  cursor: pointer;
+  transition: 0.2s filter;
+}
+.insta__box:hover {
+  filter: blur(1px);
+}
 @keyframes fade {
   from {
     opacity: 0.3;
@@ -651,6 +687,9 @@ img {
     padding-bottom: 65px;
     width: 60%;
   }
+  .insta {
+    padding-top: 30px;
+  }
 }
 @media (max-width: 768px) {
   .col-s-1 {
@@ -767,6 +806,12 @@ img {
   }
   .memory__text {
     font-size: 18px;
+  }
+  .playlist__box {
+    flex-wrap: wrap;
+  }
+  .playlist__list {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
