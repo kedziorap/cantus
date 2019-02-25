@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 [class^="col-"] {
-    padding: 5px;
+    padding: 12px;
 }
 
 .col-1 {flex: 8.333%;}
@@ -58,6 +58,10 @@ img {
 @color-white: #fff;
 @color-gray: #d6d6d6;
 @color-black: #333;
+
+.section {
+    padding: 100px 0;
+}
 
 .btn {
     border: 0;
@@ -168,26 +172,30 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     font-family: @font-title;
-    line-height: 0.6;
     margin-top: 0;
-    margin-bottom: 85px;
-    transform: scale(.8, 1);
+    margin-bottom: 25px;
     user-select: none;
     padding: 5px 10px;
+    font-size: 40px;
+    line-height: 0.9;
     &--big {
+        margin-bottom: 85px;
+        line-height: 0.6;
         color: @color-primary;
         font-size: 130px;
+        transform: scale(.8, 1);
     }
     &__small {
         display: inline-block;
         width: 100%;
         font-weight: 200;
-        font-size: 90px;
         font-family: 'Great Vibes';
         text-transform: capitalize;
-        transform: scale(1.1, 1);
+        font-size: 40px;
+        color: @color-primary;
         &--big {
             color: @color-black;
+            font-size: 90px;
         }
     }
 }
@@ -232,8 +240,57 @@ img {
     transform: translateY(1px);
     display: inline-block;
     margin-right: 15px;
+    &--secondary {
+        margin-right:5px;
+    }
 }
-
+.member-slider {
+    position: relative;
+    &__arrow-prev, &__arrow-next {
+        position: absolute;
+        top: -30px;
+        background-color: @color-primary;
+        color: @color-white;
+        padding: 8px 15px;
+        user-select: none;
+        right: 15px;
+        cursor: pointer;
+    }
+    &__arrow-prev {
+        right: 60px;
+    }
+    &__item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover .member-slider__content {
+            bottom: 0;
+        }
+    }
+    &__content {
+        position: absolute;
+        width: 100%;
+        bottom: -52px;
+        background-color: @color-primary;
+        color: @color-white;
+        padding: 15px 25px;
+        transition: 0.3s bottom;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: @font-title;
+    }
+    &__position {
+        padding: 5px 0;
+    }
+    &__media {
+        padding: 15px 0;
+    }
+    &__social {
+        margin-right: 17px;
+    }
+}
 //ANIMATE
 
 @keyframes fade {
