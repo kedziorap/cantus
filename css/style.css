@@ -44,40 +44,40 @@ body {
   padding: 12px;
 }
 .col-1 {
-  flex: 8.333%;
+  width: 8.333%;
 }
 .col-2 {
-  flex: 16.667%;
+  width: 16.667%;
 }
 .col-3 {
-  flex: 25%;
+  width: 25%;
 }
 .col-4 {
-  flex: 33.333%;
+  width: 33.333%;
 }
 .col-5 {
-  flex: 41.667%;
+  width: 41.667%;
 }
 .col-6 {
-  flex: 50%;
+  width: 50%;
 }
 .col-7 {
-  flex: 58.333%;
+  width: 58.333%;
 }
 .col-8 {
-  flex: 66.667%;
+  width: 66.667%;
 }
 .col-9 {
-  flex: 75%;
+  width: 75%;
 }
 .col-10 {
-  flex: 83.333%;
+  width: 83.333%;
 }
 .col-11 {
-  flex: 91.667%;
+  width: 91.667%;
 }
 .col-12 {
-  flex: 100%;
+  width: 100%;
 }
 img {
   max-width: 100%;
@@ -265,13 +265,10 @@ img {
 .icon--secondary {
   margin-right: 5px;
 }
-.member-slider {
-  position: relative;
-}
-.member-slider__arrow-prev,
-.member-slider__arrow-next {
+.arrow__arrow-prev,
+.arrow__arrow-next {
   position: absolute;
-  top: -30px;
+  top: -40px;
   background-color: #df001f;
   color: #fff;
   padding: 8px 15px;
@@ -279,8 +276,11 @@ img {
   right: 15px;
   cursor: pointer;
 }
-.member-slider__arrow-prev {
+.arrow__arrow-prev {
   right: 60px;
+}
+.member-slider {
+  position: relative;
 }
 .member-slider__item {
   position: relative;
@@ -312,6 +312,130 @@ img {
 }
 .member-slider__social {
   margin-right: 17px;
+}
+.concert {
+  position: relative;
+  margin-top: -10px;
+}
+.concert__item {
+  padding: 0;
+  animation: fade 0.5s;
+}
+.concert__item--hide {
+  display: none;
+}
+.concert__image {
+  position: relative;
+  padding-right: 30px;
+}
+.concert__date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-family: 'DroidSans', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  user-select: none;
+}
+.concert__details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 50px;
+}
+.concert__title {
+  width: 100%;
+  font-size: 22px;
+  font-family: 'Opens Sans', sans-serif;
+  margin-bottom: 0;
+}
+.concert__info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.concert__text {
+  display: inline-block;
+  width: 100%;
+  padding: 6px 0;
+}
+.concert__text--title {
+  font-weight: bold;
+  position: relative;
+}
+.concert__text--title::after {
+  content: ':';
+  position: absolute;
+  right: 20px;
+}
+.concert__left {
+  flex: 1;
+}
+.concert__right {
+  flex: 3;
+}
+.concert__photo {
+  overflow: hidden;
+}
+.concert__photo img {
+  transition: 0.2s all;
+}
+.concert__photo img:hover {
+  transform: scale(1.1);
+}
+.concert::after {
+  content: '';
+  background: #d6d6d6;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+}
+.concert__progress {
+  content: '';
+  background: #df001f;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.videos {
+  position: relative;
+  width: 100%;
+}
+.videos__list {
+  max-width: 100%;
+}
+.videos__item {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.videos__play {
+  display: inline-block;
+  padding: 20px 22px;
+  border-radius: 50%;
+  background: #df001f;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.videos__play:hover {
+  opacity: 0.8;
+}
+.videos__movie {
+  width: 100%;
+  display: block;
+  height: 230px;
+  margin: 0 auto;
 }
 @keyframes fade {
   from {
@@ -360,43 +484,56 @@ img {
   .title__small--big {
     font-size: 60px;
   }
+  .concert__image {
+    padding-right: 0;
+  }
+  .concert__details {
+    padding: 5px 30px;
+  }
+  .concert__text--title::after {
+    position: relative;
+    right: auto;
+  }
 }
 @media (max-width: 992px) {
   .col-m-1 {
-    flex: 8.333%;
+    width: 8.333%;
   }
   .col-m-2 {
-    flex: 16.667%;
+    width: 16.667%;
   }
   .col-m-3 {
-    flex: 25%;
+    width: 25%;
   }
   .col-m-4 {
-    flex: 33.333%;
+    width: 33.333%;
   }
   .col-m-5 {
-    flex: 41.667%;
+    width: 41.667%;
   }
   .col-m-6 {
-    flex: 50%;
+    width: 50%;
   }
   .col-m-7 {
-    flex: 58.333%;
+    width: 58.333%;
   }
   .col-m-8 {
-    flex: 66.667%;
+    width: 66.667%;
   }
   .col-m-9 {
-    flex: 75%;
+    width: 75%;
   }
   .col-m-10 {
-    flex: 83.333%;
+    width: 83.333%;
   }
   .col-m-11 {
-    flex: 91.667%;
+    width: 91.667%;
   }
   .col-m-12 {
-    flex: 100%;
+    width: 100%;
+  }
+  .section {
+    padding: 50px 0;
   }
   .navbar {
     height: 70px;
@@ -469,43 +606,53 @@ img {
     width: 70%;
     transform: translate(-30%, -50%);
   }
+  .concert__photo {
+    padding: 0 40px;
+  }
+  .videos__item {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .videos__item img {
+    display: inline;
+  }
 }
 @media (max-width: 768px) {
   .col-s-1 {
-    flex: 8.333%;
+    width: 8.333%;
   }
   .col-s-2 {
-    flex: 16.667%;
+    width: 16.667%;
   }
   .col-s-3 {
-    flex: 25%;
+    width: 25%;
   }
   .col-s-4 {
-    flex: 33.333%;
+    width: 33.333%;
   }
   .col-s-5 {
-    flex: 41.667%;
+    width: 41.667%;
   }
   .col-s-6 {
-    flex: 50%;
+    width: 50%;
   }
   .col-s-7 {
-    flex: 58.333%;
+    width: 58.333%;
   }
   .col-s-8 {
-    flex: 66.667%;
+    width: 66.667%;
   }
   .col-s-9 {
-    flex: 75%;
+    width: 75%;
   }
   .col-s-10 {
-    flex: 83.333%;
+    width: 83.333%;
   }
   .col-s-11 {
-    flex: 91.667%;
+    width: 91.667%;
   }
   .col-s-12 {
-    flex: 100%;
+    width: 100%;
   }
   .navbar__link {
     padding: 10px 5px;
@@ -555,43 +702,60 @@ img {
   .member-slider__media {
     display: none;
   }
+  .concert {
+    padding-bottom: 20px;
+  }
+  .concert__photo {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .concert__left {
+    flex: 1;
+  }
+  .concert__right {
+    flex: 1;
+  }
+  .concert__center {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
   .col-sx-1 {
-    flex: 8.333%;
+    width: 8.333%;
   }
   .col-sx-2 {
-    flex: 16.667%;
+    width: 16.667%;
   }
   .col-sx-3 {
-    flex: 25%;
+    width: 25%;
   }
   .col-sx-4 {
-    flex: 33.333%;
+    width: 33.333%;
   }
   .col-sx-5 {
-    flex: 41.667%;
+    width: 41.667%;
   }
   .col-sx-6 {
-    flex: 50%;
+    width: 50%;
   }
   .col-sx-7 {
-    flex: 58.333%;
+    width: 58.333%;
   }
   .col-sx-8 {
-    flex: 66.667%;
+    width: 66.667%;
   }
   .col-sx-9 {
-    flex: 75%;
+    width: 75%;
   }
   .col-sx-10 {
-    flex: 83.333%;
+    width: 83.333%;
   }
   .col-sx-11 {
-    flex: 91.667%;
+    width: 91.667%;
   }
   .col-sx-12 {
-    flex: 100%;
+    width: 100%;
   }
   .slider__image {
     transform: translateX(-18%) scale(1.2);

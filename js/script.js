@@ -40,11 +40,11 @@ $('.member-slider__list').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: true,
-    nextArrow: $('.member-slider__arrow-next'),
-    prevArrow: $('.member-slider__arrow-prev'),
+    nextArrow: $('#next-intro'),
+    prevArrow: $('#prev-intro'),
     responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 845,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2
@@ -57,8 +57,51 @@ $('.member-slider__list').slick({
             slidesToScroll: 1
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
   });
+//CONCERTS
+var concerts = $('.concert__item');
+var concertLength = concerts.length;
+var concertsProgress = $('.concert__progress');
+var indexConcert = 0;
+function progressSecondBar() {
+    concertsProgress.css({
+        width: 1/concertLength*100 +'%',
+        left: indexConcert/concertLength*100 +'%',
+    }, setTimeout(changeConcert, 8000));
+}
+function changeConcert() {
+    concerts.eq(indexConcert).addClass('concert__item--hide');
+    (indexConcert == concertLength - 1) ? indexConcert = 0 : indexConcert += 1;
+    concerts.eq(indexConcert).removeClass('concert__item--hide');
+    progressSecondBar();
+}
+progressSecondBar();
+
+//VIDEOS
+
+$('.videos__list').slick({
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    nextArrow: $('#next-video'),
+    prevArrow: $('#prev-video'),
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+});

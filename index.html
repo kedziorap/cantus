@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,279 +9,331 @@
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="wrapper">
-      <header>
-        <nav class="navbar">
-          <div class="navbar__hamburger-box">
-            <i class="fas fa-bars navbar__hamburger" id="hamburger"></i>
-          </div>
-          <div class="navbar__menu navbar__menu--main">
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">home</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">events</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">gallery</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">news</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">albums</a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link">pages</a>
-              </li>
-            </ul>
-          </div>
-          <div class="navbar__logo">
-            <a href="#"><img src="img/Untitled-1.png" alt="logo"/></a>
-          </div>
-          <div class="navbar__menu--right">
-            <ul class="navbar__list navbar__list--right">
-              <li class="navbar__item">
-                <a href="#" class="navbar__link navbar__link--media"
-                  ><i class="fab fa-facebook-f icon"></i> 32k</a
-                >
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link navbar__link--media"
-                  ><i class="fab fa-twitter icon"></i> 32k</a
-                >
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__link navbar__link--media"
-                  ><i class="fab fa-google-plus-g icon"></i> 32k</a
-                >
-              </li>
-              <li class="navbar__item navbar__item--button-in">
-                <span><button class="btn">purchase ticket</button></span>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <section>
-        <div class="slider">
-          <div class="slider__list">
-            <div class="slider__item">
-              <img class="slider__image" src="img/slide0.jpg" alt="" />
+        <header>
+            <nav class="navbar">
+                <div class="navbar__hamburger-box">
+                    <i class="fas fa-bars navbar__hamburger" id="hamburger"></i>
+                </div>
+                <div class="navbar__menu navbar__menu--main">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">home</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">events</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">gallery</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">news</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">albums</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">pages</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar__logo">
+                    <a href="#"><img src="img/Untitled-1.png" alt="logo" /></a>
+                </div>
+                <div class="navbar__menu--right">
+                    <ul class="navbar__list navbar__list--right">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link navbar__link--media"><i class="fab fa-facebook-f icon"></i>
+                                32k</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link navbar__link--media"><i class="fab fa-twitter icon"></i>
+                                32k</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link navbar__link--media"><i
+                                    class="fab fa-google-plus-g icon"></i> 32k</a>
+                        </li>
+                        <li class="navbar__item navbar__item--button-in">
+                            <span><button class="btn">purchase ticket</button></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="slider">
+                <div class="slider__list">
+                    <div class="slider__item">
+                        <img class="slider__image" src="img/slide0.jpg" alt="" />
+                    </div>
+                    <div class="slider__item slider__item--hide">
+                        <img class="slider__image" src="img/slide1.jpg" alt="" />
+                    </div>
+                    <div class="slider__description">
+                        <h1 class="title title--big">
+                            Let's Rock
+                            <small class="title__small title__small--big">With Cantus</small>
+                        </h1>
+                        <button class="btn btn--red">discover more</button>
+                    </div>
+                    <span class="slider__progress"></span>
+                </div>
             </div>
-            <div class="slider__item slider__item--hide">
-              <img class="slider__image" src="img/slide1.jpg" alt="" />
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title">
+                    introducing
+                    <small class="title__small">Our members</small>
+                </h2>
+                <div class="member-slider">
+                    <span id="prev-intro" class="arrow__arrow-prev">&#10094;</span>
+                    <span id="next-intro" class="arrow__arrow-next">&#10095;</span>
+                    <div class="member-slider__inside">
+                        <div class="row member-slider__list">
+                            <div class="col-4 col-m-6 col-sx-12">
+                                <div class="member-slider__item">
+                                    <img src="img/person1.jpg" alt="" />
+                                    <div class="member-slider__content">
+                                        <div class="member-slider__name">Jone Smith</div>
+                                        <div class="member-slider__position">Vocal</div>
+                                        <div class="member-slider__media">
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-facebook-f icon icon--secondary"></i>
+                                                32k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-twitter icon icon--secondary"></i>21k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-google-plus-g icon icon--secondary"></i>17k</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-m-6 col-sx-12">
+                                <div class="member-slider__item">
+                                    <img src="img/person2.jpg" alt="" />
+                                    <div class="member-slider__content">
+                                        <div class="member-slider__name">Jone Smith</div>
+                                        <div class="member-slider__position">Vocal</div>
+                                        <div class="member-slider__media">
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-facebook-f icon icon--secondary"></i>
+                                                32k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-twitter icon icon--secondary"></i>21k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-google-plus-g icon icon--secondary"></i>17k</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-m-6 col-sx-12">
+                                <div class="member-slider__item">
+                                    <img src="img/person3.jpg" alt="" />
+                                    <div class="member-slider__content">
+                                        <div class="member-slider__name">Jone Smith</div>
+                                        <div class="member-slider__position">Vocal</div>
+                                        <div class="member-slider__media">
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-facebook-f icon icon--secondary"></i>
+                                                32k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-twitter icon icon--secondary"></i>21k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-google-plus-g icon icon--secondary"></i>17k</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-m-6 col-sx-12">
+                                <div class="member-slider__item">
+                                    <img src="img/person1.jpg" alt="" />
+                                    <div class="member-slider__content">
+                                        <div class="member-slider__name">Jone Smith</div>
+                                        <div class="member-slider__position">Vocal</div>
+                                        <div class="member-slider__media">
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-facebook-f icon icon--secondary"></i>
+                                                32k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-twitter icon icon--secondary"></i>21k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-google-plus-g icon icon--secondary"></i>17k</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-m-6 col-sx-12">
+                                <div class="member-slider__item">
+                                    <img src="img/person2.jpg" alt="" />
+                                    <div class="member-slider__content">
+                                        <div class="member-slider__name">Jone Smith</div>
+                                        <div class="member-slider__position">Vocal</div>
+                                        <div class="member-slider__media">
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-facebook-f icon icon--secondary"></i>
+                                                32k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-twitter icon icon--secondary"></i>21k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-google-plus-g icon icon--secondary"></i>17k</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-m-6 col-sx-12">
+                                <div class="member-slider__item">
+                                    <img src="img/person3.jpg" alt="" />
+                                    <div class="member-slider__content">
+                                        <div class="member-slider__name">Jone Smith</div>
+                                        <div class="member-slider__position">Vocal</div>
+                                        <div class="member-slider__media">
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-facebook-f icon icon--secondary"></i>
+                                                32k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-twitter icon icon--secondary"></i>21k</span>
+                                            <span class="member-slider__social"><i
+                                                    class="fab fa-google-plus-g icon icon--secondary"></i>17k</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slider__description">
-              <h1 class="title title--big">
-                Let's Rock
-                <small class="title__small title__small--big"
-                  >With Cantus</small
-                >
-              </h1>
-              <button class="btn btn--red">discover more</button>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-m-12">
+                        <h2 class="title">Upcoming<small class="title__small">concerts</small></h2>
+                        <div class="row concert">
+                            <div class="col-12 concert__item">
+                                <div class="row">
+                                    <div class="col-5 col-m-6  col-s-12 concert__image">
+                                        <div class="concert__photo">
+                                            <img src="img/concert.jpg" alt="">
+                                        </div>
+                                        <div class="concert__date">13<br>Jan</div>
+                                    </div>
+                                    <div class="col-7 col-m-6 col-s-12 concert__details">
+                                        <h3 class="concert__title">Texas Rock nation 2016</h3>
+                                        <div class="concert__info">
+                                            <div class="concert__left">
+                                                <span class="concert__text concert__text--title">Location</span>
+                                                <span class="concert__text concert__text--title">Date</span>
+                                                <span class="concert__text concert__text--title">Time</span>
+                                                <span class="concert__text concert__text--title">Price</span>
+                                            </div>
+                                            <div class="concert__right">
+                                                <span class="concert__text">31 Great Smith, UK</span>
+                                                <span class="concert__text">July 17, 2017</span>
+                                                <span class="concert__text">10:00 AM</span>
+                                                <span class="concert__text">$40</span>
+                                            </div>
+                                        </div>
+                                        <div class="concert__center"><button class="btn btn--red">putchase ticket</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 concert__item concert__item--hide">
+                                <div class="row">
+                                    <div class="col-5 col-m-6  col-s-12 concert__image">
+                                        <div class="concert__photo">
+                                            <img src="img/concert.jpg" alt="">
+                                        </div>
+                                        <div class="concert__date">15<br>Jan</div>
+                                    </div>
+                                    <div class="col-7 col-m-6 col-s-12 concert__details">
+                                        <h3 class="concert__title">Wembley Fest 2016</h3>
+                                        <div class="concert__info">
+                                            <div class="concert__left">
+                                                <span class="concert__text concert__text--title">Location</span>
+                                                <span class="concert__text concert__text--title">Date</span>
+                                                <span class="concert__text concert__text--title">Time</span>
+                                                <span class="concert__text concert__text--title">Price</span>
+                                            </div>
+                                            <div class="concert__right">
+                                                <span class="concert__text">Wembley Stadium, London, UK</span>
+                                                <span class="concert__text">July 19, 2017</span>
+                                                <span class="concert__text">11:00 AM</span>
+                                                <span class="concert__text">$40</span>
+                                            </div>
+                                        </div>
+                                        <div class="concert__center"><button class="btn btn--red">putchase ticket</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 concert__item concert__item--hide">
+                                    <div class="row">
+                                        <div class="col-5 col-m-6  col-s-12 concert__image">
+                                            <div class="concert__photo">
+                                                <img src="img/concert.jpg" alt="">
+                                            </div>
+                                            <div class="concert__date">1<br>Feb</div>
+                                        </div>
+                                        <div class="col-7 col-m-6 col-s-12 concert__details">
+                                            <h3 class="concert__title">Top Tour</h3>
+                                            <div class="concert__info">
+                                                <div class="concert__left">
+                                                    <span class="concert__text concert__text--title">Location</span>
+                                                    <span class="concert__text concert__text--title">Date</span>
+                                                    <span class="concert__text concert__text--title">Time</span>
+                                                    <span class="concert__text concert__text--title">Price</span>
+                                                </div>
+                                                <div class="concert__right">
+                                                    <span class="concert__text">Portsmouth, UK</span>
+                                                    <span class="concert__text">July 28, 2017</span>
+                                                    <span class="concert__text">11:00 AM</span>
+                                                    <span class="concert__text">$55</span>
+                                                </div>
+                                            </div>
+                                            <div class="concert__center"><button class="btn btn--red">putchase ticket</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <span class="concert__progress"></span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-m-12">
+                        <h2 class="title">Latest<small class="title__small">videos</small></h2>
+                        <div class="videos">
+                                <span id="prev-video" class="arrow__arrow-prev">&#10094;</span>
+                                <span id="next-video" class="arrow__arrow-next">&#10095;</span>
+                            <div class="videos__list">
+                                    <div class="videos__item">
+                                            <img src="img/video.jpg" alt="">
+                                            <span class="videos__play"><i class="fas fa-play"></i></span>
+                                    </div>
+                                    <div class="videos__item">
+                                            <img src="img/video.jpg" alt="">
+                                            <span class="videos__play"><i class="fas fa-play"></i></span>
+                                    </div>
+                                    <div class="videos__item">
+                                            <img src="img/video.jpg" alt="">
+                                            <span class="videos__play"><i class="fas fa-play"></i></span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span class="slider__progress"></span>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="title">
-            introducing
-            <small class="title__small">Our members</small>
-          </h2>
-          <div class="member-slider">
-            <span class="member-slider__arrow-prev">&#10094;</span>
-            <span class="member-slider__arrow-next">&#10095;</span>
-            <div class="member-slider__inside">
-              <div class="row member-slider__list">
-                <div class="col-4 col-m-6 col-sx-12">
-                  <div class="member-slider__item">
-                    <img src="img/person1.jpg" alt="" />
-                    <div class="member-slider__content">
-                      <div class="member-slider__name">Jone Smith</div>
-                      <div class="member-slider__position">Vocal</div>
-                      <div class="member-slider__media">
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-facebook-f icon icon--secondary"
-                          ></i>
-                          32k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i class="fab fa-twitter icon icon--secondary"></i
-                          >21k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-google-plus-g icon icon--secondary"
-                          ></i
-                          >17k</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 col-m-6 col-sx-12">
-                  <div class="member-slider__item">
-                    <img src="img/person2.jpg" alt="" />
-                    <div class="member-slider__content">
-                      <div class="member-slider__name">Jone Smith</div>
-                      <div class="member-slider__position">Vocal</div>
-                      <div class="member-slider__media">
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-facebook-f icon icon--secondary"
-                          ></i>
-                          32k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i class="fab fa-twitter icon icon--secondary"></i
-                          >21k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-google-plus-g icon icon--secondary"
-                          ></i
-                          >17k</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 col-m-6 col-sx-12">
-                  <div class="member-slider__item">
-                    <img src="img/person3.jpg" alt="" />
-                    <div class="member-slider__content">
-                      <div class="member-slider__name">Jone Smith</div>
-                      <div class="member-slider__position">Vocal</div>
-                      <div class="member-slider__media">
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-facebook-f icon icon--secondary"
-                          ></i>
-                          32k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i class="fab fa-twitter icon icon--secondary"></i
-                          >21k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-google-plus-g icon icon--secondary"
-                          ></i
-                          >17k</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 col-m-6 col-sx-12">
-                  <div class="member-slider__item">
-                    <img src="img/person1.jpg" alt="" />
-                    <div class="member-slider__content">
-                      <div class="member-slider__name">Jone Smith</div>
-                      <div class="member-slider__position">Vocal</div>
-                      <div class="member-slider__media">
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-facebook-f icon icon--secondary"
-                          ></i>
-                          32k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i class="fab fa-twitter icon icon--secondary"></i
-                          >21k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-google-plus-g icon icon--secondary"
-                          ></i
-                          >17k</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 col-m-6 col-sx-12">
-                  <div class="member-slider__item">
-                    <img src="img/person2.jpg" alt="" />
-                    <div class="member-slider__content">
-                      <div class="member-slider__name">Jone Smith</div>
-                      <div class="member-slider__position">Vocal</div>
-                      <div class="member-slider__media">
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-facebook-f icon icon--secondary"
-                          ></i>
-                          32k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i class="fab fa-twitter icon icon--secondary"></i
-                          >21k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-google-plus-g icon icon--secondary"
-                          ></i
-                          >17k</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 col-m-6 col-sx-12">
-                  <div class="member-slider__item">
-                    <img src="img/person3.jpg" alt="" />
-                    <div class="member-slider__content">
-                      <div class="member-slider__name">Jone Smith</div>
-                      <div class="member-slider__position">Vocal</div>
-                      <div class="member-slider__media">
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-facebook-f icon icon--secondary"
-                          ></i>
-                          32k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i class="fab fa-twitter icon icon--secondary"></i
-                          >21k</span
-                        >
-                        <span class="member-slider__social"
-                          ><i
-                            class="fab fa-google-plus-g icon icon--secondary"
-                          ></i
-                          >17k</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

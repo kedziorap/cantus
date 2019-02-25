@@ -7,6 +7,7 @@
 @font-primary: 'Montserrat', sans-serif;
 @font-title: 'DroidSans', sans-serif;
 @font-fancy: 'Great Vibes', serif;
+@font-sceond: 'Opens Sans', sans-serif;
 * {
     box-sizing: border-box;
 }
@@ -35,18 +36,18 @@ body {
     padding: 12px;
 }
 
-.col-1 {flex: 8.333%;}
-.col-2 {flex: 16.667%;}
-.col-3 {flex: 25%;}
-.col-4 {flex: 33.333%;}
-.col-5 {flex: 41.667%;}
-.col-6 {flex: 50%;}
-.col-7 {flex: 58.333%;}
-.col-8 {flex: 66.667%;}
-.col-9 {flex: 75%;}
-.col-10 {flex: 83.333%;}
-.col-11 {flex: 91.667%;}
-.col-12 {flex: 100%;}
+.col-1 {width: 8.333%;}
+.col-2 {width: 16.667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333%;}
+.col-5 {width: 41.667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333%;}
+.col-8 {width: 66.667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333%;}
+.col-11 {width: 91.667%;}
+.col-12 {width: 100%;}
 
 img {
     max-width: 100%;
@@ -244,11 +245,10 @@ img {
         margin-right:5px;
     }
 }
-.member-slider {
-    position: relative;
+.arrow {
     &__arrow-prev, &__arrow-next {
         position: absolute;
-        top: -30px;
+        top: -40px;
         background-color: @color-primary;
         color: @color-white;
         padding: 8px 15px;
@@ -259,6 +259,9 @@ img {
     &__arrow-prev {
         right: 60px;
     }
+}
+.member-slider {
+    position: relative;
     &__item {
         position: relative;
         overflow: hidden;
@@ -289,6 +292,130 @@ img {
     }
     &__social {
         margin-right: 17px;
+    }
+}
+.concert {
+    position: relative;
+    margin-top: -10px;
+    &__item {
+        padding: 0;
+        animation: fade 0.5s;
+        &--hide {
+            display: none;
+        }
+    }
+    &__image {
+        position: relative;
+        padding-right: 30px;
+    }
+    &__date {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: @color-white;
+        text-align: center;
+        font-family: @font-title;
+        font-weight: 800;
+        font-size: 40px;
+        user-select: none;
+    }
+    &__details {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px 50px;
+    }
+    &__title {
+        width: 100%;
+        font-size: 22px;
+        font-family: @font-sceond;
+        margin-bottom: 0;
+    }
+    &__info {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    &__text {
+        display: inline-block;
+        width: 100%;
+        padding: 6px 0;
+        &--title {
+            font-weight: bold;
+            position: relative;
+            &::after {
+                content: ':';
+                position: absolute;
+                right: 20px;
+            }
+        }
+    }
+    &__left {
+        flex:1;
+    }
+    &__right {
+        flex:3;
+    }
+    &__photo {
+        overflow: hidden;
+        img {
+            transition: 0.2s all;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &::after {
+        content: '';
+        background: @color-gray;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+    }
+    &__progress {
+        content: '';
+        background: @color-primary;
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+.videos {
+    position: relative;
+    width: 100%;
+    &__list {
+        max-width: 100%;
+    }
+    &__item {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+    &__play {
+        display: inline-block;
+        padding: 20px 22px;
+        border-radius: 50%;
+        background: @color-primary;
+        color: @color-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__movie {
+        width: 100%;
+        display: block;
+        height: 230px;
+        margin: 0 auto;
     }
 }
 //ANIMATE
