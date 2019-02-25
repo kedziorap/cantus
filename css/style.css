@@ -437,6 +437,33 @@ img {
   height: 230px;
   margin: 0 auto;
 }
+.memory {
+  background-image: url('../img/memory.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.memory__content {
+  padding: 55px 90px;
+  padding-bottom: 85px;
+  color: #fff;
+  width: 75%;
+}
+.memory__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
+  font-family: 'Opens Sans', sans-serif;
+  margin-bottom: 25px;
+}
+.memory__text {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.slogan {
+  font-family: 'Great Vibes', serif;
+  font-size: 40px;
+}
 @keyframes fade {
   from {
     opacity: 0.3;
@@ -616,6 +643,14 @@ img {
   .videos__item img {
     display: inline;
   }
+  .memory {
+    background-position: right;
+  }
+  .memory__content {
+    padding: 40px 20px;
+    padding-bottom: 65px;
+    width: 60%;
+  }
 }
 @media (max-width: 768px) {
   .col-s-1 {
@@ -719,6 +754,20 @@ img {
     width: 100%;
     text-align: center;
   }
+  .memory {
+    background-position-x: 70%;
+  }
+  .memory__content {
+    padding: 40px 20px;
+    padding-bottom: 65px;
+    width: 90%;
+  }
+  .memory__title {
+    font-size: 20px;
+  }
+  .memory__text {
+    font-size: 18px;
+  }
 }
 @media (max-width: 480px) {
   .col-sx-1 {
@@ -774,5 +823,13 @@ img {
   }
   .btn {
     padding: 8px 20px;
+  }
+  .memory {
+    background-position-x: 80%;
+  }
+  .memory__content {
+    padding: 40px 20px;
+    padding-bottom: 65px;
+    width: 90%;
   }
 }

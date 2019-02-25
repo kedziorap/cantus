@@ -418,11 +418,38 @@ img {
         margin: 0 auto;
     }
 }
+.memory {
+    background-image: url('../img/memory.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__content{
+        padding: 55px 90px;
+        padding-bottom: 85px;
+        color: @color-white;
+        width: 75%;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 35px;
+        font-family: @font-sceond;
+        margin-bottom: 25px;
+    }
+    &__text {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+}
+.slogan {
+    font-family: @font-fancy;
+    font-size: 40px;
+}
 //ANIMATE
 
 @keyframes fade {
     from {
-        opacity: 0.3
+        opacity: 0.3;
     } to {
         opacity: 1
     }
