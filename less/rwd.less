@@ -296,6 +296,31 @@
             width: 100%;
         }
     }
+    .newsletter {
+        &__input {
+            width: 60%;
+        }
+    }
+    .footer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &__menu {
+            margin-top: 20px;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__link {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            &:hover {
+                border-bottom: 0;
+                background-color: @color-gray;
+                color: @color-white;
+            }
+        }
+    }
 }
 
 @media(max-width: 480px) {

@@ -444,6 +444,10 @@ img {
 .slogan {
     font-family: @font-fancy;
     font-size: 40px;
+    &--red {
+        color: @color-primary;
+        font-size: 30px;
+    }
 }
 .playlist {
     padding: 5px;
@@ -519,6 +523,60 @@ img {
     &__icon {
         font-size: 30px;
         transform: translateY(3px)
+    }
+}
+.newsletter {
+    padding-bottom: 30px;
+    &__form {
+        text-align: center;
+    }
+    &__input {
+        margin-left: 20px;
+        border: 0;
+        border-bottom: 5px solid @color-gray;
+        padding: 15px 0;
+        width: 45%;
+        transition: 0.2s padding;
+        &:focus {
+            padding: 15px;
+        }
+    }
+    &__button {
+        border: 0;
+        background: inherit;
+        cursor: pointer;
+        transform: translateX(-20px);
+        .fas {
+            color: @color-primary;
+            font-weight: bold;
+        }
+    }
+}
+.footer {
+    margin-top: 35px;
+    border-top: 3px solid @color-gray;
+    margin-bottom: 80px;
+    overflow: hidden;
+    &__menu {
+        margin-top: 62px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        text-transform: uppercase;
+        padding: 10px 18px;
+        font-size: 14px;
+        &:hover {
+            border-bottom: 1px solid @color-gray;
+        }
+    }
+    &__note {
+        text-align: center;
     }
 }
 //ANIMATE

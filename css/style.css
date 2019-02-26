@@ -464,6 +464,10 @@ img {
   font-family: 'Great Vibes', serif;
   font-size: 40px;
 }
+.slogan--red {
+  color: #df001f;
+  font-size: 30px;
+}
 .playlist {
   padding: 5px;
 }
@@ -538,6 +542,60 @@ img {
 .download__icon {
   font-size: 30px;
   transform: translateY(3px);
+}
+.newsletter {
+  padding-bottom: 30px;
+}
+.newsletter__form {
+  text-align: center;
+}
+.newsletter__input {
+  margin-left: 20px;
+  border: 0;
+  border-bottom: 5px solid #d6d6d6;
+  padding: 15px 0;
+  width: 45%;
+  transition: 0.2s padding;
+}
+.newsletter__input:focus {
+  padding: 15px;
+}
+.newsletter__button {
+  border: 0;
+  background: inherit;
+  cursor: pointer;
+  transform: translateX(-20px);
+}
+.newsletter__button .fas {
+  color: #df001f;
+  font-weight: bold;
+}
+.footer {
+  margin-top: 35px;
+  border-top: 3px solid #d6d6d6;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+.footer__menu {
+  margin-top: 62px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  font-size: 14px;
+}
+.footer__link:hover {
+  border-bottom: 1px solid #d6d6d6;
+}
+.footer__note {
+  text-align: center;
 }
 @keyframes fade {
   from {
@@ -863,6 +921,29 @@ img {
   }
   .playlist__list {
     width: 100%;
+  }
+  .newsletter__input {
+    width: 60%;
+  }
+  .footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer__menu {
+    margin-top: 20px;
+  }
+  .footer__item {
+    width: 100%;
+  }
+  .footer__link {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__link:hover {
+    border-bottom: 0;
+    background-color: #d6d6d6;
+    color: #fff;
   }
 }
 @media (max-width: 480px) {
